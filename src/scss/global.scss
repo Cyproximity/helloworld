@@ -1,0 +1,61 @@
+@import "variables";
+@import "reset";
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  letter-spacing: -0.03rem;
+  line-height: 2.40rem;
+  font: 400 1.33rem/1 $font-variation-1;
+  color: var(--white);
+  background-color: var(--dark);
+  user-select: none;
+  scroll-behavior: smooth;
+  height: 100%;
+  min-height: 100vh;
+}
+
+p {
+  letter-spacing: -0.03rem;
+  font-size: 1.33rem;
+  line-height: 2.40rem;
+}
+
+.noise {
+  position: fixed;
+  background-image: url(/img/noise.png);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: auto;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  animation: noise 500ms steps(10) infinite;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+@keyframes noise {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: url(/img/logo.svg) center/contain no-repeat;
+  border: 1px solid var(--dark);
+}

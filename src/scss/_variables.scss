@@ -1,0 +1,11 @@
+$dark: #11121B;
+$white: #fff;
+
+$font-variation-1: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-variation-2: 'Dela Gothic One', cursive;
+
+:root {
+  --dark: #{$dark};
+  --white: #{$white};
+  --font-color: #{$white};
+}
