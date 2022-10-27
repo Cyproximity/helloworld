@@ -26,7 +26,7 @@ const item = {
 function SocialItem({ name, initials, href}: SocialItemProps) {
   return (
     <motion.li variants={item} className="socials-item">
-      <a href={href} title={name}>
+      <a href={href} title={name} rel="noopener noopener" target="_blank">
         <span className="initials">{initials}</span>
       </a>
     </motion.li>
@@ -36,10 +36,9 @@ function SocialItem({ name, initials, href}: SocialItemProps) {
 function Socials() {
   return (
     <motion.ul variants={container} initial="hidden" animate="show" className="sidebar-socials socials">
-      <SocialItem name="Instagram" initials="IG" href="#" />
-      <SocialItem name="Facebook Profile" initials="FB" href="#" />
-      <SocialItem name="LinkedIn Profile" initials="IN" href="#" />
-      <SocialItem name="Github" initials="GH" href="#" />
+      <SocialItem name="Instagram" initials="IG" href="https://www.linkedin.com/in/geraldagustin/" />
+      <SocialItem name="LinkedIn Profile" initials="IN" href="https://www.instagram.com/agstin.gerald/" />
+      <SocialItem name="Github" initials="GH" href="https://www.github.com/cyproximity" />
     </motion.ul>
   )
 }
