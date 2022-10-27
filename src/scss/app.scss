@@ -82,6 +82,26 @@
       }
     }
   }
+
+  @media (max-width: 767px) {
+    .sidebar-container {
+      height: unset;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .sidebar-content {
+      margin: 0 0.5rem;
+    }
+
+    .sidebar-socials {
+      padding: 0;
+    }
+
+    .sidebar-socials li {
+      margin: 0 0 0 0.5rem;
+    }
+  }
 }
 
 .content {
