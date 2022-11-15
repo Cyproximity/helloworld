@@ -7,21 +7,20 @@ import Hero from "../components/Hero";
 function Home() {
   return (
     <motion.main>
-      <Hero tagline="kumusta" translate="hello"/>
+      <Hero tagline="kumusta" translate="hello" />
 
       <div className="intro-container">
         <div className="intro">
           <p className="type-14">#introduction</p>
           <p className="type-16">Hello! I am Gerald Agustin</p>
           <p className="type-16 shortintro">
-            A Fullstack web developer from Philippines, I've been in the web dev industry since twenty sixteen.
+            A Fullstack web developer from Philippines, I've been in the web dev
+            industry since twenty sixteen.
           </p>
         </div>
         <div className="intro-sellout">
           <p className="type-16">Let's create a awesome project!</p>
-          <p className="type-16">
-            Also, I can be part of your team.
-          </p>
+          <p className="type-16">Also, I can be part of your team.</p>
         </div>
       </div>
 
@@ -57,22 +56,20 @@ function Home() {
 
       <div className="contact">
         <p className="type-14">#Contact me</p>
-        <p className="type-16">
-          Got a project?
-        </p>
-        <p className="type-16">
-          Hire me?
-        </p>
+        <p className="type-16">Got a project?</p>
+        <p className="type-16">Hire me?</p>
 
         <p className="type-16">
           <a href="tel:(+63) 915 260 1996">(+63) 915 260 1996</a>
         </p>
         <p className="type-16">
-          <a href="mailto:geraldagustin@outlook.com?subject=Hi Gerald Agustin">geraldagustin@outlook.com</a>
+          <a href="mailto:gerald@agstn.xyz?subject=Hi Gerald Agustin">
+            gerald@agstn.xyz
+          </a>
         </p>
       </div>
     </motion.main>
-  )
+  );
 }
 
 export default Home;
